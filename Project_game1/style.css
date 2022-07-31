@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+}
+body {
+  font-family: sans-serif;
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.container {
+  text-align: center;
+}
+.container h1 {
+  font-size: 32px;
+  color: rgb(253, 231, 231);
+}
+.container p {
+  color: #f7f7f7;
+  margin: 10px 0px;
+}
+.container button {
+  padding: 20px 50px;
+  border: none;
+  border-radius: 4px;
+  font-size: 18px;
+  margin: 20px 10px;
+  background-color: #d8224fa4;
+  color: #fff;
+}
+.container button:hover {
+  background-color: #22a4d8d7;
+}
+ion-icon {
+  display: block;
+  margin: 10px auto;
+  font-size: 32px;
+}

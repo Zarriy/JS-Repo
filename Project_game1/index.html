@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style.css" rel="stylesheet" />
     <title>Project Paper Scissor Rock</title>
   </head>
   <body
@@ -11,6 +12,30 @@
       background-image: linear-gradient(30deg, rgba(153, 54, 54, 0.533), #9188);
     "
   >
+    <div class="container">
+      <h1>Welcome! to Rock, Paper and Scissor game</h1>
+      <p>
+        Select your weapon for playing against the computer <br />
+        Whoever scores 5 first, wins.
+      </p>
+      <button class="btn rock" data-id="0">
+        <ion-icon name="aperture-outline"></ion-icon>Rock
+      </button>
+      <button class="btn paper" data-id="1">
+        <ion-icon name="document-outline"></ion-icon>Paper
+      </button>
+      <button class="btn scissor" data-id="2">
+        <ion-icon name="cut-outline"></ion-icon>Scissor
+      </button>
+    </div>
     <script src="script.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
   </body>
 </html>
