@@ -5,4 +5,18 @@
 body {
   background-image: linear-gradient(30deg, #295270, #524175);
   height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  width: 528px;
+  padding: 10px;
+  background-color: #035992;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.divs {
+  flex: 1 0 auto;
 }
