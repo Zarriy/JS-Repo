@@ -39,9 +39,6 @@
     />
 
     <style>
-      /*
-        misc styles, nothing to do with CSS variables
-      */
       :root {
         --spacing: 10px;
         --blur: 10px;
@@ -87,14 +84,24 @@
       // first I have to take out the values of the color swatch when change. So, let's select each item.
       const selectors = Array.from(document.getElementsByTagName("input"));
       const img = document.querySelector("img");
+      console.log(document.documentElement.style);
+      //   function valueAlter(e) {
+      //     if (e.target.id === "spacing")
+      //       img.style.padding = `${e.target.value}px`;
+      //     if (e.target.id === "blur")
+      //       img.style.filter = `blur(${e.target.value}px)`;
+      //     if (e.target.id === "base") img.style.background = e.target.value;
+      //   }
 
-      function valueAlter(e) {
-        if (e.target.id === "spacing")
-          img.style.padding = `${e.target.value}px`;
-        if (e.target.id === "blur")
-          img.style.filter = `blur(${e.target.value}px)`;
-        if (e.target.id === "base") img.style.background = e.target.value;
+      // Learning new way of doing that.
+      function valueAlter() {
+        const suffix = this.dataset.sizing || "";
+        document.documentElement.style.setProperty(
+          `--${this.name}`,
+          this.value + suffix
+        );
       }
+
       selectors.forEach((el) => el.addEventListener("change", valueAlter));
       selectors.forEach((el) => el.addEventListener("mousemove", valueAlter));
     </script>
