@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&family=Source+Sans+Pro:wght@300;400;600&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --light-blue: #8ecae6;
+  --light-dark-blue: #219ebc;
+  --dark-blue: #023047;
+  --yellow-light: #ffb703;
+  --yellow-dark: #fb8500;
+  --para-text: #e8e8e8;
+  --secondary-heading: #e5e5e5;
+}
+html {
+  font-size: 10px;
+}
+body {
+  height: 100vh;
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+  text-align: center;
+  padding: 80px 40px;
+  font-family: "Source Sans Pro", sans-serif;
+}
+.container h2 {
+  font-size: 3rem;
+  color: rgba(24, 24, 24, 0.685);
+  padding-bottom: 1rem;
+}
+.container > p {
+  font-size: 1.8rem;
+  color: rgba(24, 24, 24, 0.685);
+}
+.faq-container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  gap: 3rem;
+  padding: 40px 60px;
+  text-align: left;
+  max-width: 640px;
+  width: 100%;
+}
+.faq-container h3 {
+  color: #fff;
+  font-size: 2.2rem;
+}
+.faq-container p {
+  font-size: 1.8rem;
+  margin-top: 1rem;
+  margin-left: 4rem;
+  color: #f7f7f7;
+  display: none;
+}
+.faq-box {
+  background-color: var(--dark-blue);
+  padding: 2rem 4rem;
+  border-radius: 5px;
+}
+.icon-box-1,
+.icon-box-2,
+.icon-box-3,
+.icon-box-4 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2rem;
+}
+ion-icon {
+  font-size: 2.4rem;
+  color: var(--yellow-light);
+  cursor: pointer;
+}
+ion-icon:hover {
+  color: var(--light-dark-blue);
+}
+.faq-box.active ion-icon {
+  color: var(--dark-blue);
+}
+.faq-box.active {
+  background-color: var(--yellow-light);
+  box-shadow: 0 10px 10px rgba(80, 56, 56, 0.151);
+}
+.faq-box.active p {
+  display: block;
+}
