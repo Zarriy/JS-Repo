@@ -47,9 +47,9 @@ body {
 }
 .faq-container h3 {
   color: #fff;
-  font-size: 2.2rem;
+  font-size: 2.1rem;
 }
-.faq-container p {
+.faq-box p {
   font-size: 1.8rem;
   margin-top: 1rem;
   margin-left: 4rem;
@@ -60,6 +60,9 @@ body {
   background-color: var(--dark-blue);
   padding: 2rem 4rem;
   border-radius: 5px;
+  border-left: 6px solid var(--light-blue);
+
+  transition: all 100ms linear;
 }
 .icon-box-1,
 .icon-box-2,
@@ -82,7 +85,8 @@ ion-icon:hover {
   color: var(--dark-blue);
 }
 .faq-box.active {
-  background-color: var(--yellow-light);
+  background-color: var(--yellow-dark);
+  border-left: 6px solid var(--yellow-light);
   box-shadow: 0 10px 10px rgba(80, 56, 56, 0.151);
 }
 .faq-box.active p {
