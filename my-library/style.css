@@ -1,0 +1,16 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+html {
+  font-size: 10px;
+}
+body {
+  background: linear-gradient(89deg, #942382, #182479);
+  color: #fff;
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  font-size: 4rem;
+}
