@@ -9,8 +9,33 @@ body {
   background: linear-gradient(89deg, #942382, #182479);
   color: #fff;
   display: flex;
-  height: 100vh;
+  padding: 20px 40px;
   align-items: center;
   justify-content: center;
   font-size: 4rem;
+  font-family: sans-serif;
+}
+.book {
+  background-color: rgba(255, 255, 255, 0.305);
+  border-radius: 11px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px 40px;
+  flex: 1;
+}
+.book h1 {
+  font-size: 2.4rem;
+  text-align: center;
+}
+.book > span {
+  font-size: 1.8rem;
+  display: inline-block;
+}
+.bookShelf {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  width: 90vh;
+  flex-wrap: wrap;
 }
